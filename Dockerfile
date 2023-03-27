@@ -4,4 +4,4 @@ RUN ["/usr/bin/curl", "https://raw.githubusercontent.com/CTFd/CTFd/master/conf/n
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
 EXPOSE 80
-CMD ["nginx","-g","daemon off;"]
+CMD /usr/sbin/nginx -g "daemon off;"
